@@ -3,3 +3,5 @@ buildGpu/
 cpu/
 gpu/
 include/
+opencv/
+opencv_contrib/
