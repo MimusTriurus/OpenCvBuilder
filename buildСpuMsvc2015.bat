@@ -12,6 +12,6 @@ cmake -G "Visual Studio 14 2015 Win64" ^
 -DBUILD_WITH_STATIC_CRT=OFF ^
 ../opencv
 
-cmake --build . -j8 --config Release
+cmake --build . --config Release
 
 pause
