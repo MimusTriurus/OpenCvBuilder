@@ -6,6 +6,9 @@ md buildGpu
 cd buildGpu
 
 cmake -G "Visual Studio 14 2015 Win64" ^
+-T v140 ^
+-DCMAKE_SYSTEM_VERSION=8 ^
+-DCMAKE_CXX_FLAGS_RELEASE=/MT ^
 -DWITH_CUDA=ON ^
 -DOPENCV_DNN_CUDA=ON ^
 -DWITH_CUDNN=ON ^
@@ -15,7 +18,7 @@ cmake -G "Visual Studio 14 2015 Win64" ^
 -DCUDA_ARCH_BIN="6.0 6.1 7.0 7.5" ^
 -DCUDA_FAST_MATH=ON ^
 -DENABLE_FAST_MATH=ON ^
--DBUILD_WITH_STATIC_CRT=OFF ^
+-DBUILD_WITH_STATIC_CRT=ON ^
 ../opencv
 
 cmake --build . --config Release
