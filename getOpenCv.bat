@@ -1,2 +1,2 @@
-git clone https://github.com/opencv/opencv.git
-git clone https://github.com/opencv/opencv_contrib.git
+git clone https://10.0.140.250/frt/opencv.git
+git clone https://10.0.140.250/frt/opencv_contrib.git
