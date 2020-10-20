@@ -7,12 +7,15 @@ cd buildCpu
 
 cmake -G "Visual Studio 14 2015 Win64" ^
 -T v140 ^
--DCMAKE_SYSTEM_VERSION=8 ^
+-DCMAKE_SYSTEM_VERSION=10 ^
 -DCMAKE_CXX_FLAGS_RELEASE=/MT ^
 -DBUILD_SHARED_LIBS=OFF ^
 -DOPENCV_EXTRA_MODULES_PATH="../opencv_contrib/modules" ^
 -DENABLE_FAST_MATH=ON ^
 -DBUILD_WITH_STATIC_CRT=ON ^
+-DWITH_JASPER=OFF ^
+-DBUILD_JASPER=OFF ^
+-DBUILD_TESTS=OFF ^
 ../opencv
 
 cmake --build . --config Release
