@@ -5,7 +5,8 @@ md buildCpu
 
 cd buildCpu
 
-cmake -G "Visual Studio 15 2017 Win64" ^
+cmake -G "Visual Studio 15 2017" ^
+-A Win32 ^
 -T v141 ^
 -DCMAKE_SYSTEM_VERSION=10.0.18362.0 ^
 -DCMAKE_CXX_FLAGS_RELEASE=/MT ^
