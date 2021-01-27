@@ -1,5 +1,7 @@
 buildCpu/
 buildGpu/
+buildAndroid/
+opencv_android_build/
 cpu/
 gpu/
 include/

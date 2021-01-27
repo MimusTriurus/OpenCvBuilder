@@ -5,7 +5,13 @@ md buildGpu
 
 cd buildGpu
 
-cmake -G "Visual Studio 15 2017 Win64" ^
+rem 
+rem -G Visual Studio 14 2015 | Visual Studio 15 2017
+rem -A Win32 / x64           | Win32 / x64
+rem -T v140                  | v141
+
+cmake -G "Visual Studio 15 2017" ^
+-A x64
 -T v141 ^
 -DCMAKE_SYSTEM_VERSION=10 ^
 -DCMAKE_CXX_FLAGS_RELEASE=/MT ^

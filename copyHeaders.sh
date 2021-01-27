@@ -84,3 +84,5 @@ cp -R $(pwd)/opencv_contrib/modules/xphoto/include 		$(pwd)/
 
 find $(pwd)/include/ -type f -name '*.txt' -delete
 find $(pwd)/include/ -type f -name '*.cpp' -delete
+
+read -p "Press enter to continue"
